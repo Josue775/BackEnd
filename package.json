@@ -4,7 +4,8 @@
   "description": "backend para el sistema de citas del despacho juridico",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon src/index.js",
+    "start": "node index.js"
   },
   "author": "Horacio Josue Marroquin Herrera",
   "license": "ISC",
