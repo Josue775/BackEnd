@@ -1,11 +1,10 @@
-const express = require('express');
-const cors = require('cors');
-const morgan = require('morgan');
-const config = require('./confing');
-
-const citas = require('./modulos/clientes/rutas');
-const cliente = require('./modulos/usuarios/rutas');
-const error = require('./red/errors');
+import express from 'express';
+import cors from 'cors';
+import morgan from 'morgan';
+import config from './confing';
+import { Pool } from 'pg';
+import cliente from './modulos/usuarios/rutas';
+import error from './red/errors';
 const app = express();
 
 var corsOptiosn = {
